@@ -3,24 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Business Analysis | Hexo</title>
+    <title>Oracle-XE-11g (Docker) | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="Business Analysis Copyright 2013. Dr. June Sung ParkAll rights reserved. KBAPF(Korea Business Analysis Professionals Forum) Related Posts">
+    <meta name="description" content="[설치] Install : Stable channel &amp;gt; Download &amp;amp; Install  1docker pull alexeiled/docker-oracle-xe-11g [실행]1docker run -d --shm-size=2g -p 1521:1521 --name 11g -p 8880:8080 alexeiled/docker-oracle-xe-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Business Analysis">
-<meta property="og:url" content="https://jesoos.github.io/2017/08/09/02-BA-Business-Analysis/index.html">
+<meta property="og:title" content="Oracle-XE-11g (Docker)">
+<meta property="og:url" content="https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Business Analysis Copyright 2013. Dr. June Sung ParkAll rights reserved. KBAPF(Korea Business Analysis Professionals Forum) Related Posts">
+<meta property="og:description" content="[설치] Install : Stable channel &amp;gt; Download &amp;amp; Install  1docker pull alexeiled/docker-oracle-xe-11g [실행]1docker run -d --shm-size=2g -p 1521:1521 --name 11g -p 8880:8080 alexeiled/docker-oracle-xe-">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://jesoos.github.io/images/Business%20Analysis.pdf">
-<meta property="og:updated_time" content="2017-08-25T01:29:46.000Z">
+<meta property="og:image" content="https://i.ytimg.com/vi/8HssKRnvo6c/maxresdefault.jpg">
+<meta property="og:updated_time" content="2017-08-25T05:16:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Business Analysis">
-<meta name="twitter:description" content="Business Analysis Copyright 2013. Dr. June Sung ParkAll rights reserved. KBAPF(Korea Business Analysis Professionals Forum) Related Posts">
-<meta name="twitter:image" content="https://jesoos.github.io/images/Business%20Analysis.pdf">
+<meta name="twitter:title" content="Oracle-XE-11g (Docker)">
+<meta name="twitter:description" content="[설치] Install : Stable channel &amp;gt; Download &amp;amp; Install  1docker pull alexeiled/docker-oracle-xe-11g [실행]1docker run -d --shm-size=2g -p 1521:1521 --name 11g -p 8880:8080 alexeiled/docker-oracle-xe-">
+<meta name="twitter:image" content="https://i.ytimg.com/vi/8HssKRnvo6c/maxresdefault.jpg">
     
 
     
@@ -136,18 +136,18 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/02-BA/">02. BA</a>
+    <a class="page-title-link" href="/categories/01-LUNOS/">01. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/01-LUNOS/DB/">DB</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-02-BA-Business-Analysis" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-01-LUNOS-20170825-Oracle-XE-11g" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Business Analysis
+        Oracle-XE-11g (Docker)
         </h1>
     
 
@@ -157,8 +157,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/08/09/02-BA-Business-Analysis/" class="article-date">
-            <time datetime="2017-08-09T07:23:08.000Z" itemprop="datePublished">2017-08-09</time>
+        <a href="/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/" class="article-date">
+            <time datetime="2017-08-25T04:16:25.000Z" itemprop="datePublished">2017-08-25</time>
         </a>
     </div>
 
@@ -167,9 +167,14 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <blockquote><p><a href="/images/Business%20Analysis.pdf">Business Analysis</a></p>
-<footer><strong>Copyright 2013. Dr. June Sung Park</strong><cite>All rights reserved.</cite></footer></blockquote>
-<p><a href="https://kbapf.wordpress.com" target="_blank" rel="external">KBAPF(Korea Business Analysis Professionals Forum)</a></p>
+            <h4 id="설치"><a href="#설치" class="headerlink" title="[설치]"></a>[설치]</h4><ol>
+<li><a href="https://docs.docker.com/docker-for-mac/install" target="_blank" rel="external">Install</a> : Stable channel &gt; Download &amp; Install</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull alexeiled/docker-oracle-xe-11g</div></pre></td></tr></table></figure>
+<h4 id="실행"><a href="#실행" class="headerlink" title="[실행]"></a>[실행]</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d --shm-size=2g -p 1521:1521 --name 11g -p 8880:8080 alexeiled/docker-oracle-xe-11g</div></pre></td></tr></table></figure>
+<p>DB : username: system , password: oracle<br><a href="http://localhost:8880/apex" target="_blank" rel="external">http://localhost:8880/apex</a><br>    workspace: internal, user: admin, password: oracle</p>
+<h4 id="종료"><a href="#종료" class="headerlink" title="[종료]"></a>[종료]</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker stop 11g</div></pre></td></tr></table></figure>
+<h4 id="재실행"><a href="#재실행" class="headerlink" title="[재실행]"></a>[재실행]</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker start 11g</div></pre></td></tr></table></figure>
 <h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>
         </div>
         <footer class="article-footer">
@@ -177,7 +182,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://jesoos.github.io/2017/08/09/02-BA-Business-Analysis/" data-id="cj6rffwjy000j7lgepqhthx5v" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/" data-id="cj6rffwjc00067lgev14te2mh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -314,20 +319,20 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/08/09/01-LUNOS-Product-Structure/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2017/08/25/01-LUNOS-20170825-Settings/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Product Structure
+            Settings
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2017/08/09/01-LUNOS-Processing-Premium/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/08/25/03-Tools-20170825-Hot-swapping/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Processing Premium</p>
+        <p class="article-nav-title">Hot swapping</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -530,7 +535,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'jesoos-github-io';
     
     
-    var disqus_url = 'https://jesoos.github.io/2017/08/09/02-BA-Business-Analysis/';
+    var disqus_url = 'https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/';
     
     (function() {
     var dsq = document.createElement('script');
