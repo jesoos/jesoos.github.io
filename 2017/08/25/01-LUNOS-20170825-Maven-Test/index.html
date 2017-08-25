@@ -3,17 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>TestPage | Hexo</title>
+    <title>Maven Test | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="TestPage">
-<meta property="og:url" content="https://jesoos.github.io/TestPage/index.html">
+        <meta name="keywords" content="Test" />
+    
+    <meta name="description" content="단일 파일 테스트 방법 123mvn clean install -Pdb2,test -Dit.test=ConventionalLifePremiumJavascriptTest# 위와 같이 하면 db2 설정이 들어가게 됨mvn clean install -Poracle,test -Dit.test=ConventionalLifePremiumJavascriptTest set">
+<meta name="keywords" content="Test">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maven Test">
+<meta property="og:url" content="https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Maven-Test/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="단일 파일 테스트 방법 123mvn clean install -Pdb2,test -Dit.test=ConventionalLifePremiumJavascriptTest# 위와 같이 하면 db2 설정이 들어가게 됨mvn clean install -Poracle,test -Dit.test=ConventionalLifePremiumJavascriptTest set">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-08-24T08:51:06.000Z">
+<meta property="og:image" content="https://confluence.atlassian.com/clover/files/170492714/317165315/1/1357551162194/maven_test_optimization_1st_run_full.png">
+<meta property="og:updated_time" content="2017-08-25T02:30:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TestPage">
+<meta name="twitter:title" content="Maven Test">
+<meta name="twitter:description" content="단일 파일 테스트 방법 123mvn clean install -Pdb2,test -Dit.test=ConventionalLifePremiumJavascriptTest# 위와 같이 하면 db2 설정이 들어가게 됨mvn clean install -Poracle,test -Dit.test=ConventionalLifePremiumJavascriptTest set">
+<meta name="twitter:image" content="https://confluence.atlassian.com/clover/files/170492714/317165315/1/1357551162194/maven_test_optimization_1st_run_full.png">
     
 
     
@@ -129,34 +137,56 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/TestPage/index.html">TestPage</em>
+    <a class="page-title-link" href="/categories/01-LUNOS/">01. LUNOS</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-01-LUNOS-20170825-Maven-Test" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        TestPage
+        Maven Test
         </h1>
     
 
             </header>
         
         
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/08/25/01-LUNOS-20170825-Maven-Test/" class="article-date">
+            <time datetime="2017-08-25T02:17:07.000Z" itemprop="datePublished">2017-08-25</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Test/">Test</a>
+    </div>
+
+            </div>
+        
         
         <div class="article-entry" itemprop="articleBody">
-            
+            <p>단일 파일 테스트 방법</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Pdb2,<span class="built_in">test</span> -Dit.test=ConventionalLifePremiumJavascriptTest</div><div class="line"><span class="comment"># 위와 같이 하면 db2 설정이 들어가게 됨</span></div><div class="line">mvn clean install -Poracle,<span class="built_in">test</span> -Dit.test=ConventionalLifePremiumJavascriptTest</div></pre></td></tr></table></figure>
+<p>settings.xml 설정</p>
+<figure class="highlight xml"><figcaption><span>settings.xml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">id</span>&gt;</span>oracle<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">properties</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">oracle.username</span>&gt;</span>IAAUSER<span class="tag">&lt;/<span class="name">oracle.username</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">oracle.password</span>&gt;</span>password<span class="tag">&lt;/<span class="name">oracle.password</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">oracle.port</span>&gt;</span>1521<span class="tag">&lt;/<span class="name">oracle.port</span>&gt;</span></div><div class="line">          <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>예시 (Error 일 경우)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Poracle,<span class="built_in">test</span></div><div class="line"></div><div class="line">5월 18, 2017 2:44:55 오후 org.springframework.test.context.TestContextManager prepareTestInstance</div><div class="line">심각: Caught exception <span class="keyword">while</span> allowing TestExecutionListener [com.silvermoongroup.test.resource.fixtures.DatabaseFixtureTestListener@1f36e637] to prepare <span class="built_in">test</span> instance [com.hanwha.rating.ext.ContainedCoverageTest@459b6c53]</div><div class="line">com.silvermoongroup.test.resource.fixtures.DatabaseOperationException: Error when executing database operation <span class="keyword">for</span> location [/hanwha-rating-ext-delete.xml]: ORA-02292: integrity constraint (IAARATE.FK_VRATING_ID) violated - child record found</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mvn clean install -Pdb2,<span class="built_in">test</span> -Dit.test=ConventionalLifePremiumJavascriptTest</div><div class="line"></div><div class="line">Caused by: java.sql.SQLException: SQLException <span class="keyword">in</span> StandardPoolDataSource:getConnection exception: java.sql.SQLException: SQLException <span class="keyword">in</span> StandardPoolDataSource:getConnection no connection available java.sql.SQLException: Cannot get connection <span class="keyword">for</span> URL jdbc:db2://localhost:50000/IAALUNOS : [jcc][t4][2043][11550][4.14.122] 예외 java.net.ConnectException: 다음 메시지와 함께 localhost/127.0.0.1 서버에 대한 소켓을 50,000 포트에서 열기 오류: Connection refused. ERRORCODE=-4499, SQLSTATE=08001</div></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://jesoos.github.io/TestPage/index.html" data-id="cj6rbjre90000x7geqp683e3f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Maven-Test/" data-id="cj6rbjrfo0001x7gec28f3br9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -289,6 +319,29 @@ ga('send', 'pageview');
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/08/25/02-BA-20170825-UML/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            UML
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/08/25/01-LUNOS-20170825-Selenium/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Selenium</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -486,7 +539,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'jesoos-github-io';
     
     
-    var disqus_url = 'https://jesoos.github.io/TestPage/index.html';
+    var disqus_url = 'https://jesoos.github.io/2017/08/25/01-LUNOS-20170825-Maven-Test/';
     
     (function() {
     var dsq = document.createElement('script');
