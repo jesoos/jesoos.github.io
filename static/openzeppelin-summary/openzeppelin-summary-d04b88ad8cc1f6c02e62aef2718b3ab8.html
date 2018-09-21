@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="summary-d04b88ad8cc1f6c02e62aef2718b3ab8  function showhide(id) {     var e = document.getElementById(id);     e.style.display = (e.style.display == &apos;block&apos;) ? &apos;none&apos; : &apos;block&apos;; }   rect { transiti">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://jesoos.github.io/static/openzeppelin-summary/openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="summary-d04b88ad8cc1f6c02e62aef2718b3ab8  function showhide(id) {     var e = document.getElementById(id);     e.style.display = (e.style.display == &apos;block&apos;) ? &apos;none&apos; : &apos;block&apos;; }   rect { transiti">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2026-01-04T08:52:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="summary-d04b88ad8cc1f6c02e62aef2718b3ab8  function showhide(id) {     var e = document.getElementById(id);     e.style.display = (e.style.display == &apos;block&apos;) ? &apos;none&apos; : &apos;block&apos;; }   rect { transiti">
+    
+
+    
+        <link rel="alternate" href="/" title="Hexo" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-104216473-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-Blockchain/">01. Blockchain</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/">02. BA</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/BPMN/">BPMN</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/UML/">UML</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/">03. Tools</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/">04. LUNOS</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/DB/">DB</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Design/">Design</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Git/">Git</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Settings/">Settings</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Test/">Test</a></li></ul></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    Hexo
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="page-" class="article article-single article-type-page" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>summary-d04b88ad8cc1f6c02e62aef2718b3ab8</title>
+<script type="text/javascript">
+function showhide(id)
+{
+    var e = document.getElementById(id);
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+}
+</script>
+<style>
+rect {
+transition: .6s fill;
+fill: #D3D3D3;
+opacity: 0;
+}
+rect:hover {
+    fill: #D3D3D3;
+    opacity: 0.2;
+}
+
+.outline {
+    clear: both;
+}
+
+.svg-container {
+    width: 100%;
+    max-width: 4308px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.svg-content {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container"><div class="spacer">&nbsp;</div><div class="svg-container"><svg version="1.1" preserveaspectratio="xMinYMin meet" class="svg-content" viewbox="0 0 4308 4582" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<image width="4308" height="4582" xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.png"/>
+<a xlink:href="https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token" xlink:title="https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token"><rect x="781" y="1821" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html" xlink:title="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html"><rect x="1291" y="1743" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.org" xlink:title="https://openzeppelin.org"><rect x="1230" y="390" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/0B92B14D-19D9-4F38-BFCA-344714AD45DF/note.html" xlink:title="Build Secure Smart Contracts in Solidity&#10;OpenZeppelin is a battle-tested framework of reusable smart contracts for Ethereum and other EVM and eWASM blockchains.&#10;&#10;Reduce the risk of vulnerabilities in your applications by using standard, tested, community-reviewed code."><rect x="1198" y="390" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/14A1D6CB-F0F5-4D60-AEB8-98418A5E88E9/image.png" xlink:title="image.png"><rect x="730" y="270" width="936" height="112"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23%EC%A0%84%EC%B2%B4&section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&page-id=%7B88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%7D&object-id=%7BE9C02207-1688-7A4D-A104-D8C35FF4739A%7D&10" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23%EC%A0%84%EC%B2%B4&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%7D&amp;object-id=%7BE9C02207-1688-7A4D-A104-D8C35FF4739A%7D&amp;10"><rect x="1643" y="60" width="83" height="60"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2F%EC%A0%84%EC%B2%B4%7C88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2F%EC%A0%84%EC%B2%B4%7C88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%2F%29"><rect x="1766" y="60" width="137" height="60"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/6CFA9E9F-A779-4530-880E-27D5FEFB6D0E/note.html" xlink:title="https://openzeppelin.org&#10;[framework-iThoughsX]&#10;&#10;Ethereum flavored WebAssembly(eWASM)&#10;https://github.com/ewasm/design&#10;&#10;현재 Ethereum의 Roadmap에는 EVM을 Web Assembly 기반인 eWASM으로 변경할 계획을 가지고 있습니다.&#10;https://steemit.com/kr/@coinsight/eos&#10;&#10;Source Code 분석 방법 중 test 프로그램 debugging을 선택&#10;[참고-iThoughsX]&#10;&#10;&#10;It provides implementations of standards ... , as well as Solidity components ... .&#10;https://github.com/OpenZeppelin/openzeppelin-solidity#&#10;Docs&#10;API&#10;https://github.com/OpenZeppelin/solidity-docgen&#10;&#10;&#10;contracts&#10;├── access&#10;├── bounties&#10;├── crowdsale&#10;├── cryptography&#10;├── drafts&#10;├── examples&#10;├── introspection&#10;├── lifecycle&#10;├── math&#10;├── mocks&#10;├── ownership&#10;├── payment&#10;├── token&#10;└── utils"><rect x="1633" y="128" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html" xlink:title="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html"><rect x="280" y="361" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.org/api/docs/open-zeppelin.html" xlink:title="https://openzeppelin.org/api/docs/open-zeppelin.html"><rect x="2087" y="438" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.org/api/docs/open-zeppelin.html#developer-resources" xlink:title="https://openzeppelin.org/api/docs/open-zeppelin.html#developer-resources"><rect x="2415" y="432" width="28" height="28"/></a>
+<a xlink:href="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab" xlink:title="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab"><rect x="3458" y="336" width="90" height="32"/></a>
+<a xlink:href="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab" xlink:title="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab"><rect x="2969" y="368" width="580" height="65"/></a>
+<a xlink:href="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab" xlink:title="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab"><rect x="2969" y="434" width="295" height="32"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/0E70D684-8277-4B50-BB8B-16A0CAD07D06/note.html" xlink:title="OpenZeppelin is a new smart contract development framework for the Ethereum Virtual Machine (EVM) focused on security, modularity, and code reusability.&#10;&#10;Motivation&#10;Smart contract security is hard.&#10;...&#10;&#10;Principles&#10;The core development principles we want to base OpenZeppelin on are:&#10;Security in Depth&#10;We strive to provide secure, tested, audited code. To achieve this, we need to match intention with function. Thus, documentation, code clarity, community review and security discussions are fundamental.&#10;Simple and Modular&#10;Simpler code means easier audits, and better understanding of what each component does. We look for small files, small contracts, and small functions. If you can separate a contract into two independent functionalities you should probably do it.&#10;Naming Matters(이름 지정 문제 ?)&#10;We take our time with picking names. Code is going to be written once, and read hundreds of times. Renaming for clarity is encouraged.&#10;Tests&#10;Write tests for all your code. We encourage Test Driven Development so we know when our code is right. Even though not all code in the repository is tested at the moment, we aim to test every line of code in the future.&#10;Check pre-conditions and post-conditions&#10;A very important way to prevent vulnerabilities is to catch a contract&rsquo;s inconsistent state as early as possible. This is why we want functions to check pre- and post-conditions for executing its logic. When writing code, ask yourself what you are expecting to be true before and after the function runs, and express it in code.&#10;Code Consistency&#10;Consistency on the way classes are used is paramount to an easier understanding of the library. The codebase should be as unified as possible. Read existing code and get inspired before you write your own. Follow the style guidelines. Don&rsquo;t hesitate to ask for help on how to best write a specific piece of code.&#10;Regular Audits&#10;Following good programming practices is a way to reduce the risk of vulnerabilities, but professional code audits are still needed. We will perform regular code audits on major releases, and hire security professionals to provide independent review.&#10;&#10;&#10;Implementation&#10;We&rsquo;re starting with Solidity tools because Ethereum is currently the most popular smart contract development platform. Working with Solidity also makes our tools compatible with Rootstock and some private blockchain systems like IBM&rsquo;s Blue Horizon.&#10;But our vision of improving smart contract development security standards is platform agnostic. Our plans for the future involve working on tools for Bitcoin, Tendermint, Bloq Ora, or whatever platform developers are using to build smart contract apps."><rect x="2959" y="476" width="28" height="28"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23OpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap&section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&page-id=%7BF53BA09A-E701-CD4B-8417-143DAFFCAF2F%7D&object-id=%7BD114E56C-7A39-6B4C-B501-3280973D66AB%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23OpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7BF53BA09A-E701-CD4B-8417-143DAFFCAF2F%7D&amp;object-id=%7BD114E56C-7A39-6B4C-B501-3280973D66AB%7D&amp;12"><rect x="3765" y="370" width="472" height="30"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23OpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap&section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&page-id=%7BF53BA09A-E701-CD4B-8417-143DAFFCAF2F%7D&object-id=%7BD114E56C-7A39-6B4C-B501-3280973D66AB%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23OpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7BF53BA09A-E701-CD4B-8417-143DAFFCAF2F%7D&amp;object-id=%7BD114E56C-7A39-6B4C-B501-3280973D66AB%7D&amp;12"><rect x="3765" y="400" width="275" height="32"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2FOpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap%7CF53BA09A-E701-CD4B-8417-143DAFFCAF2F%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2FOpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap%7CF53BA09A-E701-CD4B-8417-143DAFFCAF2F%2F%29"><rect x="4062" y="400" width="74" height="32"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/7774DD3A-AC90-45B3-8652-BDEFC183EFB1/note.html" xlink:title="https://blog.zeppelin.solutions/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab&#10;&#10;Manuel AraozFollow&#10;Project lead at OpenZeppelin. CTO at Zeppelin Solutions&#10;Sep 15, 2016&#10;&#10;https://en.wikipedia.org/wiki/Codebase&#10;     Typically, a codebase includes only human-written source code files&#10;&#10;&#10;Consistency on the way classes are used is paramount to an easier understanding of the library.&#10;Q 여기서 말하는 classes ?&#10;&#10;...&#10;Read existing code and get inspired before you write your own.&#10;...&#10;&#10;...&#10;But our vision of improving smart contract development security standards is platform agnostic.&#10;..."><rect x="3755" y="442" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.org/api/docs/crowdsale_Crowdsale.html" xlink:title="https://openzeppelin.org/api/docs/crowdsale_Crowdsale.html"><rect x="1617" y="598" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html" xlink:title="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html"><rect x="2063" y="264" width="28" height="28"/></a>
+<a xlink:href="https://github.com/OpenZeppelin/openzeppelin-solidity" xlink:title="https://github.com/OpenZeppelin/openzeppelin-solidity"><rect x="2425" y="280" width="28" height="28"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23token&section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&page-id=%7B80B7EAF3-9F52-4E4F-90F8-90E715BE2941%7D&object-id=%7BA386132C-ACBF-4543-824C-8E000A12AC23%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23token&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B80B7EAF3-9F52-4E4F-90F8-90E715BE2941%7D&amp;object-id=%7BA386132C-ACBF-4543-824C-8E000A12AC23%7D&amp;12"><rect x="1301" y="1801" width="120" height="60"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Ftoken%7C80B7EAF3-9F52-4E4F-90F8-90E715BE2941%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Ftoken%7C80B7EAF3-9F52-4E4F-90F8-90E715BE2941%2F%29"><rect x="1460" y="1801" width="137" height="60"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/7E4FED19-A527-47FE-8D8D-36CC7C065384/note.html" xlink:title="[token-iThoughtsX]&#10;&#10;2e0713becbdfb7a311213964140213f8dc282cd1&#10;2e0713b Francisco Giordano frangio.1@gmail.com on 2018. 9. 1. at AM 4:13&#10;https://github.com/OpenZeppelin/openzeppelin-solidity/commit/2e0713becbdfb7a311213964140213f8dc282cd1&#10;&#10;Rename ERC interfaces to I prefix (#1252)&#10;&#10;    • rename ERC20 to IERC20&#10;&#10;    • move ERC20.sol to IERC20.sol&#10;&#10;    • rename StandardToken to ERC20&#10;&#10;ERC20.sol&#10;Originally based on code by FirstBlood: https://github.com/Firstbloodio/token/blob/master/smart_contract/FirstBloodToken.sol&#10;람보(원제:First blood)&#10;팀 또는 게이머 중 제일 먼저 죽었다는 뜻. 줄여서 퍼블이라고도 한다.&#10;https://namu.wiki/w/퍼스트%20블러드&#10;https://ko.coinjinja.com/ico/firstblood&#10;http://blog.naver.com/PostView.nhn?blogId=jruits&amp;logNo=221016503577&amp;categoryNo=12&amp;parentCategoryNo=0&amp;viewDate=&amp;currentPage=23&amp;postListTopCurrentPage=&amp;from=postList&#10;&#10;&#10;&#10;&#10;contract('ERC20',function([_,owner,recipient,anotherAccount]){&#10;&#10;webpack:///./packages/truffle-core/lib/test.js:235&#10;tests(accounts);&#10;=&gt; 여기에서 contract의 callback 함수를 실행&#10;accounts는 array이기 때문에 []로 받을 수도 있음.&#10;즉,&#10;_ : 0번째의 element&#10;owner : 1번째의 element&#10;recipient : 2번째의 element&#10;anotherAccount : 3번째의 element&#10;&#10;this&#10;proto&#10;&#10;approve allowance&#10;http://joojis.tistory.com/entry/Solidity-프로그래밍-3-이더리움-토큰의-구현&#10;allowance는 balanceOf의 approval 버전입니다.&#10;&#10;Q Mocha 로 작성한 test descript 만을 추출하는 방법?&#10;&#10;&#10;test/token/ERC20/ERC20.test.js:509&#10;...&#10;        describe(description, function () {&#10;          beforeEach('burning', async function () {&#10;            const { logs } = await this.token.burn(owner, amount);&#10;            this.logs = logs;&#10;          });&#10;=&gt; burn 함수로 어떤 계정이든 burn할 수 있음&#10;&#10;contract ERC20Mock is ERC20 {&#10;...&#10;  function burn(address _account, uint256 _amount) public {&#10;    _burn(_account, _amount);&#10;  }&#10;=&gt; Mock up 으로 만든 contract 에서 가능하도록 warrping 하였기 때문에 위와 같이 가능&#10;&#10;contract ERC20Burnable is ERC20 {&#10;...&#10;  function burn(uint256 _value) public {&#10;    _burn(msg.sender, _value);&#10;  }&#10;=&gt; 자기 자신만 가능하도록 warrping 하는 것이 보안에 좋음&#10;&#10;burn 은 ERC20의 공식 Interface는 아님&#10;https://github.com/ethereum/EIPs/issues/20&#10;&#10;&#10;_burnFrom&#10;https://github.com/OpenZeppelin/openzeppelin-solidity/compare/master...jesoos:patch-1&#10;&#10;&#10;"><rect x="1291" y="1869" width="28" height="28"/></a>
+<a xlink:href="https://truffleframework.com/docs/truffle/testing/writing-tests-in-javascript#writing-tests-in-javascript" xlink:title="https://truffleframework.com/docs/truffle/testing/writing-tests-in-javascript#writing-tests-in-javascript"><rect x="1794" y="3957" width="28" height="28"/></a>
+<a xlink:href="https://mochajs.org/#interfaces" xlink:title="https://mochajs.org/#interfaces"><rect x="1794" y="4157" width="28" height="28"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Dev.Env.one%23Mocha&section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&page-id=%7B65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%7D&object-id=%7B386F4037-ECF2-DF04-2ED9-2F67A6C24576%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Dev.Env.one%23Mocha&amp;section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&amp;page-id=%7B65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%7D&amp;object-id=%7B386F4037-ECF2-DF04-2ED9-2F67A6C24576%7D&amp;12"><rect x="2526" y="4045" width="564" height="32"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Dev.Env.one%23Mocha&section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&page-id=%7B65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%7D&object-id=%7B386F4037-ECF2-DF04-2ED9-2F67A6C24576%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Dev.Env.one%23Mocha&amp;section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&amp;page-id=%7B65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%7D&amp;object-id=%7B386F4037-ECF2-DF04-2ED9-2F67A6C24576%7D&amp;12"><rect x="2526" y="4077" width="74" height="32"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28Dev.Env.one%7C2C633C5C-FA30-D946-A06E-EEF53C7C7E70%2FMocha%7C65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Dev.Env.one%7C2C633C5C-FA30-D946-A06E-EEF53C7C7E70%2FMocha%7C65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%2F%29"><rect x="2622" y="4077" width="74" height="32"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/BF025BA2-CA39-46A3-9F6C-B0CE10955BAC/note.html" xlink:title="BDD는 위의 문제 해결을 위한 테스트 작성 방식을 다음과 같이 제시한다. &#10;&ldquo;구현(Implementation)을 테스트하는 것이 아니라, 동작(Behavior)을 테스트하는 것이다.&rdquo;"><rect x="2516" y="4117" width="28" height="28"/></a>
+<a xlink:href="https://github.com/jesoos/truffle-intellij-debug" xlink:title="https://github.com/jesoos/truffle-intellij-debug"><rect x="1664" y="4391" width="28" height="28"/></a>
+<a xlink:href="http://www.chaijs.com" xlink:title="http://www.chaijs.com"><rect x="3309" y="2985" width="28" height="28"/></a>
+<a xlink:href="https://github.com/OpenZeppelin/openzeppelin-solidity#" xlink:title="https://github.com/OpenZeppelin/openzeppelin-solidity#"><rect x="3309" y="3109" width="28" height="28"/></a>
+<a xlink:href="https://github.com/OpenZeppelin" xlink:title="https://github.com/OpenZeppelin"><rect x="674" y="1177" width="28" height="28"/></a>
+<a xlink:href="https://github.com/OpenZeppelin/solidity-docgen#solidity-documentation-generator" xlink:title="https://github.com/OpenZeppelin/solidity-docgen#solidity-documentation-generator"><rect x="1780" y="1227" width="28" height="28"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23solidity-docgen&section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&page-id=%7BFC626ECF-245A-0648-92A8-CD5FC3066B0A%7D&object-id=%7B9E5A439A-2716-974A-A60F-F2F730A9B73B%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23solidity-docgen&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7BFC626ECF-245A-0648-92A8-CD5FC3066B0A%7D&amp;object-id=%7B9E5A439A-2716-974A-A60F-F2F730A9B73B%7D&amp;12"><rect x="2362" y="1093" width="248" height="44"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Fsolidity-docgen%7CFC626ECF-245A-0648-92A8-CD5FC3066B0A%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Fsolidity-docgen%7CFC626ECF-245A-0648-92A8-CD5FC3066B0A%2F%29"><rect x="2640" y="1093" width="103" height="44"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/6BEA19C4-D159-455D-9458-61FCD1315063/note.html" xlink:title="[solidity-docgen-iThoughtsX]&#10;&#10;Prerequisites&#10;&#10;git clone git@github.com:OpenZeppelin/openzeppelin-solidity.git ~/dev/smartcontractz&#10;cd ~/dev/smartcontractz&#10;mkdir docs&#10;cd docs&#10;docusaurus-init&#10;mv docs-examples-from-docusaurus docs&#10;cd website&#10;mv blog-examples-from-docusaurus blog&#10;solidity-docgen --exclude examples ~/dev/smartcontractz ~/dev/smartcontractz/contracts ~/dev/smartcontractz/docs&#10;npm start&#10;http://localhost:3000/docs/crowdsale_Crowdsale&#10;&#10;&#10;/Users/roisun/dev/smartcontractz/docs/website/siteConfig.js:42&#10;    // {doc: 'doc4', label: 'API'},&#10;    {doc: 'crowdsale_Crowdsale', label: 'API'},&#10;&#10;&#10;[참고]&#10;Error: Solidity compiler not found. Please, add solc to path or define environment variable SOLC_PATH.&#10;&#10;export SOLC_PATH=/usr/local/bin/solcjs&#10;&#10;&#10;Error: Command line operation failed with code 1.&#10;Standard error output: Invalid option selected, must specify either --bin or --abi&#10;https://github.com/ConsenSys/mythril/issues/82&#10;Hi @Warchant, solcjs doesn't support all command line options, you need to install the native solc.&#10;❯ brew linkapps solidity&#10;Error: Unknown command: linkapps&#10;https://solidity.readthedocs.io/en/develop/installing-solidity.html&#10;&#10;export SOLC_PATH=/usr/local/bin/solc or export SOLC_PATH=&#10;&#10;&#10;&#10;"><rect x="2352" y="1145" width="28" height="28"/></a>
+<a xlink:href="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53" xlink:title="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53"><rect x="2352" y="1297" width="28" height="28"/></a>
+<a xlink:href="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53" xlink:title="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53"><rect x="2362" y="1201" width="552" height="43"/></a>
+<a xlink:href="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53" xlink:title="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53"><rect x="2362" y="1244" width="548" height="43"/></a>
+<a xlink:href="https://github.com/OpenZeppelin/openzeppelin-solidity" xlink:title="https://github.com/OpenZeppelin/openzeppelin-solidity"><rect x="1497" y="1035" width="28" height="28"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html" xlink:title="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html"><rect x="2203" y="1029" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.slack.com/archives/C4GP7FGM7/p1537245807000100" xlink:title="https://openzeppelin.slack.com/archives/C4GP7FGM7/p1537245807000100"><rect x="1106" y="2637" width="28" height="28"/></a>
+<a xlink:href="https://mochajs.org" xlink:title="https://mochajs.org"><rect x="2459" y="2651" width="28" height="28"/></a>
+<a xlink:href="https://github.com/trufflesuite/truffle" xlink:title="https://github.com/trufflesuite/truffle"><rect x="2484" y="2471" width="28" height="28"/></a>
+<a xlink:href="https://openzeppelin.org" xlink:title="https://openzeppelin.org"><rect x="2410" y="2803" width="28" height="28"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&38" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&amp;section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&amp;page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&amp;object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&amp;38"><rect x="1012" y="2378" width="460" height="30"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29"><rect x="1492" y="2378" width="68" height="30"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&amp;section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&amp;page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&amp;object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&amp;12"><rect x="134" y="2525" width="540" height="60"/></a>
+<a xlink:href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&12" xlink:title="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&amp;section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&amp;page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&amp;object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&amp;12"><rect x="134" y="2585" width="41" height="60"/></a>
+<a xlink:href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&id=documents&wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29" xlink:title="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29"><rect x="215" y="2585" width="137" height="60"/></a>
+<a xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/FD7744D4-3F27-4622-9D6B-46AD158ACBEE/note.html" xlink:title="http://mangkyu.tistory.com/4&#10;http://you9010.tistory.com/147&#10;누가 누구를 호출하느냐의 차이 (who calls who)&#10;프레임워크에서는 프레임워크 코드가 우리 코드를 호출하고, 라이브러리에서는 우리 코드가 라이브러리를 호출한다."><rect x="656" y="2653" width="28" height="28"/></a>
+</svg>
+</div>
+</div>
+
+<br>
+<a href="javascript:showhide('outlineDiv')" target="_blank" rel="noopener">Outline show/hide</a>
+<div id="outlineDiv" style="display:none;">
+<h1>token</h1>
+<p>링크: <a href="https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token" target="_blank" rel="noopener">github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token</a></p>
+<h2>debug</h2>
+<p>링크: <a href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html">openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html</a></p>
+<h2><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23token&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B80B7EAF3-9F52-4E4F-90F8-90E715BE2941%7D&amp;object-id=%7BA386132C-ACBF-4543-824C-8E000A12AC23%7D&amp;12" target="_blank" rel="noopener"><u>token</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Ftoken%7C80B7EAF3-9F52-4E4F-90F8-90E715BE2941%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</h2>
+<p>[<a href="ithoughts://open?path=/Local/GoogleDriveJesoosG/jesu/Private/MindMap/openzeppelin-solidity.itmz&amp;topic=4AFF7DAC-A4A9-483A-B0FB-DF2A1154D84E" target="_blank" rel="noopener"><u>token-iThoughtsX</u></a>]<br>
+ <br>
+2e0713becbdfb7a311213964140213f8dc282cd1<br>
+2e0713b Francisco Giordano <a href="mailto:frangio.1@gmail.com" target="_blank" rel="noopener">frangio.1@gmail.com</a> on 2018. 9. 1. at AM 4:13<br>
+<a href="https://github.com/OpenZeppelin/openzeppelin-solidity/commit/2e0713becbdfb7a311213964140213f8dc282cd1" target="_blank" rel="noopener"><u>https://github.com/OpenZeppelin/openzeppelin-solidity/commit/2e0713becbdfb7a311213964140213f8dc282cd1</u></a><br>
+ <br>
+Rename ERC interfaces to I prefix (<a href="https://github.com/OpenZeppelin/openzeppelin-solidity/pull/1252" target="_blank" rel="noopener"><u>#1252</u></a>)<br>
+ </p>
+<ul>
+<li>rename ERC20 to IERC20<br>
+ </li>
+<li>move ERC20.sol to IERC20.sol<br>
+ </li>
+<li>rename StandardToken to ERC20<br>
+ <br>
+ERC20.sol<br>
+Originally based on code by FirstBlood: <a href="https://github.com/Firstbloodio/token/blob/master/smart_contract/FirstBloodToken.sol" target="_blank" rel="noopener"><u>https://github.com/Firstbloodio/token/blob/master/smart_contract/FirstBloodToken.sol</u></a><br>
+람보(원제:<strong>First blood</strong>)<br>
+팀 또는 게이머 중 제일 먼저 죽었다는 뜻. 줄여서 퍼블이라고도 한다.<br>
+<a href="https://namu.wiki/w/%ED%8D%BC%EC%8A%A4%ED%8A%B8%20%EB%B8%94%EB%9F%AC%EB%93%9C" target="_blank" rel="noopener"><u>https://namu.wiki/w/퍼스트%20블러드</u></a><br>
+<a href="https://ko.coinjinja.com/ico/firstblood" target="_blank" rel="noopener"><u>https://ko.coinjinja.com/ico/firstblood</u></a><br>
+<a href="http://blog.naver.com/PostView.nhn?blogId=jruits&amp;logNo=221016503577&amp;categoryNo=12&amp;parentCategoryNo=0&amp;viewDate=&amp;currentPage=23&amp;postListTopCurrentPage=&amp;from=postList" target="_blank" rel="noopener"><u>http://blog.naver.com/PostView.nhn?blogId=jruits&amp;logNo=221016503577&amp;categoryNo=12&amp;parentCategoryNo=0&amp;viewDate=&amp;currentPage=23&amp;postListTopCurrentPage=&amp;from=postList</u></a><br>
+ <br>
+ <br>
+ <br>
+ <br>
+contract('ERC20',function([_,owner,recipient,anotherAccount]){<br>
+ <br>
+webpack:///./packages/truffle-core/lib/test.js:235<br>
+tests(accounts);<br>
+=&gt; 여기에서 contract의 callback 함수를 실행<br>
+accounts는 array이기 때문에 []로 받을 수도 있음.<br>
+즉,<br>
+_ : 0번째의 element<br>
+owner : 1번째의 element<br>
+recipient : 2번째의 element<br>
+anotherAccount : 3번째의 element<br>
+ <br>
+ <br>
+<a href="onenote:JavaScript.one%23etc&amp;section-id=%7B40046C0C-2768-654C-A783-F5C7197D135B%7D&amp;page-id=%7B43337E00-295A-A041-B9C3-A8105DB24592%7D&amp;object-id=%7B543F196A-B7EC-3E4C-8C83-E35AFEF0AFA1%7D&amp;3A&amp;base-path=https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702" target="_blank" rel="noopener"><u>this</u></a><br>
+ <br>
+<a href="onenote:JavaScript.one%23etc&amp;section-id=%7B40046C0C-2768-654C-A783-F5C7197D135B%7D&amp;page-id=%7B43337E00-295A-A041-B9C3-A8105DB24592%7D&amp;object-id=%7B543F196A-B7EC-3E4C-8C83-E35AFEF0AFA1%7D&amp;2D&amp;base-path=https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702" target="_blank" rel="noopener"><u><strong>proto</strong></u></a><br>
+ <br>
+approve allowance<br>
+<a href="http://joojis.tistory.com/entry/Solidity-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-3-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-%ED%86%A0%ED%81%B0%EC%9D%98-%EA%B5%AC%ED%98%84" target="_blank" rel="noopener"><u>http://joojis.tistory.com/entry/Solidity-프로그래밍-3-이더리움-토큰의-구현</u></a><br>
+allowance는 balanceOf의 approval 버전입니다.<br>
+ <br>
+ <br>
+<a href="onenote:Dev.Env.one%23QA&amp;section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&amp;page-id=%7B153C1423-F87D-A446-AE12-367E790B0E15%7D&amp;object-id=%7BEEA327A8-1A18-300A-06D8-EE2FDB58573C%7D&amp;E&amp;base-path=https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702" target="_blank" rel="noopener"><u>Q Mocha 로 작성한 test descript 만을 추출하는 방법?</u></a><br>
+ <br>
+ <br>
+test/token/ERC20/ERC20.test.js:509<br>
+...<br>
+        describe(description, function () {<br>
+          beforeEach('burning', async function () {<br>
+            const { logs } = await this.token.<strong><u>burn(owner, amount)</u></strong>;<br>
+            this.logs = logs;<br>
+          });<br>
+=&gt; burn 함수로 어떤 계정이든 burn할 수 있음<br>
+ <br>
+contract ERC20Mock is ERC20 {<br>
+...<br>
+  function burn(address _account, uint256 _amount) public {<br>
+    _burn(_account, _amount);<br>
+  }<br>
+=&gt; Mock up 으로 만든 contract 에서 가능하도록 warrping 하였기 때문에 위와 같이 가능<br>
+ <br>
+contract ERC20Burnable is ERC20 {<br>
+...<br>
+  function burn(uint256 _value) public {<br>
+    _burn(msg.sender, _value);<br>
+  }<br>
+=&gt; 자기 자신만 가능하도록 warrping 하는 것이 보안에 좋음<br>
+ <br>
+burn 은 ERC20의 공식 Interface는 아님<br>
+<a href="https://github.com/ethereum/EIPs/issues/20" target="_blank" rel="noopener"><u>https://github.com/ethereum/EIPs/issues/20</u></a><br>
+ <br>
+ <br>
+_burnFrom<br>
+<a href="https://github.com/OpenZeppelin/openzeppelin-solidity/compare/master...jesoos:patch-1" target="_blank" rel="noopener"><u>https://github.com/OpenZeppelin/openzeppelin-solidity/compare/master...jesoos:patch-1</u></a></li>
+</ul>
+<h1><div style="max-width: 592px; width: 100%; margin-left: auto; margin-right: auto; display: block;"><svg viewbox="0 0 592 70" version="1.1" preserveaspectratio="xMinYMin meet" style="width: 100%;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image width="592" height="70" xlink:href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8-assets/14A1D6CB-F0F5-4D60-AEB8-98418A5E88E9/image.png"/></svg></div></h1>
+<p>링크: <a href="https://openzeppelin.org" target="_blank" rel="noopener">openzeppelin.org</a></p>
+<h3><strong>Build Secure Smart Contracts in Solidity</strong></h3>
+<p>OpenZeppelin is a battle-tested <u><strong>framework</strong></u> of <u><strong>reusable</strong></u> smart contracts for Ethereum and other EVM and eWASM blockchains.</p>
+<p>Reduce the risk of vulnerabilities in your applications by using <u><strong>standard, tested, community-reviewed code</strong></u>.</p>
+<h2><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23%EC%A0%84%EC%B2%B4&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%7D&amp;object-id=%7BE9C02207-1688-7A4D-A104-D8C35FF4739A%7D&amp;10" target="_blank" rel="noopener"><u>전체</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2F%EC%A0%84%EC%B2%B4%7C88AE8A22-4FCF-BC4D-A47C-F9B106E8DDD1%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</h2>
+<p><a href="https://openzeppelin.org/" target="_blank" rel="noopener"><u>https://openzeppelin.org</u></a><br>
+ <br>
+<a href="ithoughts://open?path=/Local/GoogleDriveJesoosG/jesu/Private/MindMap/openzeppelin-solidity.itmz&amp;topic=0C3AFB61-9DE4-42C0-9DD9-402999AE7AC6" target="_blank" rel="noopener"><u>[framework-iThoughsX]</u></a><br>
+ <br>
+<strong>Ethereum flavored WebAssembly(eWASM)</strong><br>
+<a href="https://github.com/ewasm/design" target="_blank" rel="noopener"><u>https://github.com/ewasm/design</u></a><br>
+ <br>
+현재 Ethereum의 Roadmap에는 EVM을 Web Assembly 기반인 <strong>eWASM</strong>으로 변경할 계획을 가지고 있습니다.<br>
+<a href="https://steemit.com/kr/@coinsight/eos" target="_blank" rel="noopener"><u>https://steemit.com/kr/@coinsight/eos</u></a><br>
+ <br>
+Source Code 분석 방법 중 test 프로그램 debugging을 선택<br>
+<a href="ithoughts://open?path=/Local/GoogleDriveJesoosG/jesu/Private/MindMap/openzeppelin-solidity.itmz&amp;topic=293BC80A-AC2C-4398-B724-D146C4FEC15E" target="_blank" rel="noopener"><u>[참고-iThoughsX]</u></a><br>
+ <br>
+ <br>
+It provides implementations of standards ... , as well as Solidity components ... .<br>
+<a href="https://github.com/OpenZeppelin/openzeppelin-solidity#" target="_blank" rel="noopener"><u>https://github.com/OpenZeppelin/openzeppelin-solidity#</u></a><br>
+ <br>
+<a href="https://openzeppelin.org/api/docs/open-zeppelin.html" target="_blank" rel="noopener"><u>Docs</u></a><br>
+ <br>
+<a href="https://openzeppelin.org/api/docs/crowdsale_Crowdsale.html" target="_blank" rel="noopener"><u>API</u></a><br>
+ <br>
+<a href="https://github.com/OpenZeppelin/solidity-docgen" target="_blank" rel="noopener"><u>https://github.com/OpenZeppelin/solidity-docgen</u></a><br>
+ <br>
+ <br>
+contracts<br>
+├── access<br>
+├── bounties<br>
+├── crowdsale<br>
+├── cryptography<br>
+├── drafts<br>
+├── examples<br>
+├── introspection<br>
+├── lifecycle<br>
+├── math<br>
+├── mocks<br>
+├── <a href="onenote:%23ownership&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B358C7339-65A6-C143-B510-032E9B43F0F0%7D&amp;object-id=%7B1075E10B-8322-3C46-AA6D-1A636B99CEB4%7D&amp;12&amp;base-path=https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one" target="_blank" rel="noopener"><u>ownership</u></a><br>
+├── payment<br>
+├── <a href="onenote:%23token&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7B80B7EAF3-9F52-4E4F-90F8-90E715BE2941%7D&amp;object-id=%7BA386132C-ACBF-4543-824C-8E000A12AC23%7D&amp;12&amp;base-path=https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one" target="_blank" rel="noopener"><u>token</u></a><br>
+└── utils</p>
+<h2>Github</h2>
+<p>링크: <a href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html">openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html</a></p>
+<h3>github.com/OpenZeppelin/openzeppelin-solidity</h3>
+<p>링크: <a href="https://github.com/OpenZeppelin/openzeppelin-solidity" target="_blank" rel="noopener">github.com/OpenZeppelin/openzeppelin-solidity</a></p>
+<h2>Docs</h2>
+<p>링크: <a href="https://openzeppelin.org/api/docs/open-zeppelin.html" target="_blank" rel="noopener">openzeppelin.org/api/docs/open-zeppelin.html</a></p>
+<h3>Developer Resources</h3>
+<p>링크: <a href="https://openzeppelin.org/api/docs/open-zeppelin.html#developer-resources" target="_blank" rel="noopener">openzeppelin.org/api/docs/open-zeppelin.html#developer-resources</a></p>
+<ul>
+<li>
+<p>•    Framework proposal and roadmap: <a href="https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab" target="_blank" rel="noopener">https://medium.com/zeppelin-blog/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab</a></p>
+<p><a href="https://openzeppelin.org/" target="_blank" rel="noopener">OpenZeppelin</a> is a new smart contract development framework for the Ethereum Virtual Machine (<a href="https://ethereum.stackexchange.com/questions/119/what-opcodes-are-available-for-the-ethereum-evm" target="_blank" rel="noopener">EVM</a>) focused on <u><strong>security, modularity, and code reusability</strong></u>.</p>
+<p><strong>Motivation<br>
+<a href="https://medium.com/bitcorps-blog/onward-with-ethereum-smart-contract-security-97a827e47702#.vt6qe09z5" target="_blank" rel="noopener">Smart contract security is hard</a></strong>.<br>
+...</p>
+<p><strong>Principles</strong><br>
+The core development principles we want to base OpenZeppelin on are:<br>
+<strong><em>Security in Depth</em></strong><br>
+We strive to provide <u><strong>secure, tested, audited code</strong></u>. To achieve this, we need to match intention with function. <u><strong>Thus, documentation, code clarity, community review and security discussions are fundamental.</strong></u><br>
+<strong><em>Simple and Modular</em></strong><br>
+Simpler code means easier audits, and better understanding of what each component does. We look for small files, small contracts, and small functions. If you can <u><strong>separate</strong></u> a contract into two <u><strong>independent</strong></u> functionalities you should probably do it.<br>
+<strong><em>Naming Matters(이름 지정 문제 ?)</em></strong><br>
+We take our time with picking names. Code is going to be written once, and read hundreds of times. Renaming for clarity is encouraged.<br>
+<strong><em>Tests</em></strong><br>
+<u><strong>Write tests for all your code.</strong></u> We encourage Test Driven Development so we know when our code is right. Even though not all code in the repository is tested at the moment, we aim to test every line of code in the future.<br>
+<strong><em>Check pre-conditions and post-conditions</em></strong><br>
+A very important way to prevent vulnerabilities is to catch a contract’s <u><strong>inconsistent state</strong></u> as early as possible. This is why we want functions to check pre- and post-conditions for executing its logic. When writing code, ask yourself what you are expecting to be true before and after the function runs, and express it in code.<br>
+<strong><em>Code Consistency</em></strong><br>
+Consistency on the way classes are used is paramount to an easier understanding of the library. The codebase should be as unified as possible. Read existing code and get inspired before you write your own. <a href="https://github.com/OpenZeppelin/zep-solidity/blob/master/CONTRIBUTING.md#style-guidelines" target="_blank" rel="noopener">Follow the style guidelines</a>. Don’t hesitate to ask for help on how to best write a specific piece of code.<br>
+<strong><em>Regular Audits</em></strong><br>
+Following good programming practices is a way to reduce the risk of vulnerabilities, but professional code audits are still needed. We will perform regular code audits on major releases, and hire security professionals to provide independent review.</p>
+<p><strong>Implementation</strong><br>
+We’re starting with Solidity tools because Ethereum is currently the most popular smart contract development platform. Working with Solidity also makes our tools compatible with <a href="http://www.rsk.co/" target="_blank" rel="noopener">Rootstock</a> and some private blockchain systems like <a href="https://bluehorizon.network/" target="_blank" rel="noopener">IBM’s Blue Horizon</a>.<br>
+<u><strong>But our vision of improving smart contract development security standards is platform agnostic.</strong></u> Our plans for the future involve working on tools for Bitcoin, <a href="http://tendermint.com/" target="_blank" rel="noopener">Tendermint</a>, <a href="https://github.com/bloq/ora" target="_blank" rel="noopener">Bloq Ora</a>, or whatever platform developers are using to build smart contract apps.</p>
+<ul>
+<li>
+<p><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23OpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7BF53BA09A-E701-CD4B-8417-143DAFFCAF2F%7D&amp;object-id=%7BD114E56C-7A39-6B4C-B501-3280973D66AB%7D&amp;12" target="_blank" rel="noopener"><u>OpenZeppelin Framework Proposal and Development Roadmap</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2FOpenZeppelin%20Framework%20Proposal%20and%20Development%20Roadmap%7CF53BA09A-E701-CD4B-8417-143DAFFCAF2F%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</p>
+<p><a href="https://blog.zeppelin.solutions/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab" target="_blank" rel="noopener"><u>https://blog.zeppelin.solutions/zeppelin-framework-proposal-and-development-roadmap-fdfa9a3a32ab</u></a><br>
+ </p>
+<p><a href="https://blog.zeppelin.solutions/@maraoz?source=post_header_lockup" target="_blank" rel="noopener"><u>Manuel Araoz</u></a>Follow<br>
+Project lead at OpenZeppelin. CTO at Zeppelin Solutions<br>
+Sep 15, 2016<br>
+ <br>
+ <br>
+<a href="https://en.wikipedia.org/wiki/Codebase" target="_blank" rel="noopener"><u>https://en.wikipedia.org/wiki/Codebase</u></a><br>
+     Typically, a codebase includes only human-written <a href="https://en.wikipedia.org/wiki/Source_code" target="_blank" rel="noopener"><u>source code</u></a> files</p>
+<p> <br>
+Consistency on the way classes are used is paramount to an easier understanding of the library.<br>
+<u>Q 여기서 말하는 classes ?</u><br>
+ <br>
+...<br>
+Read existing code and get inspired before you write your own.<br>
+...<br>
+ <br>
+...<br>
+But our vision of improving smart contract development security standards is platform agnostic.<br>
+...</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>API</h2>
+<p>링크: <a href="https://openzeppelin.org/api/docs/crowdsale_Crowdsale.html" target="_blank" rel="noopener">openzeppelin.org/api/docs/crowdsale_Crowdsale.html</a></p>
+<h2>framework</h2>
+<p>링크: <a href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html">openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html</a></p>
+<h1>OpenZeppelin(Github)</h1>
+<p>링크: <a href="https://github.com/OpenZeppelin" target="_blank" rel="noopener">github.com/OpenZeppelin</a></p>
+<h2><strong>openzeppelin-solidity</strong></h2>
+<p>링크: <a href="https://github.com/OpenZeppelin/openzeppelin-solidity" target="_blank" rel="noopener">github.com/OpenZeppelin/openzeppelin-solidity</a></p>
+<h3>Github</h3>
+<p>링크: <a href="openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html">openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html</a></p>
+<h2><strong>solidity-docgen</strong></h2>
+<p>링크: <a href="https://github.com/OpenZeppelin/solidity-docgen#solidity-documentation-generator" target="_blank" rel="noopener">github.com/OpenZeppelin/solidity-docgen#solidity-documentation-generator</a></p>
+<h3><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/OpenZeppelin.one%23solidity-docgen&amp;section-id=%7B684985B7-0FF8-4440-88E3-A842579A4539%7D&amp;page-id=%7BFC626ECF-245A-0648-92A8-CD5FC3066B0A%7D&amp;object-id=%7B9E5A439A-2716-974A-A60F-F2F730A9B73B%7D&amp;12" target="_blank" rel="noopener"><u>solidity-docgen</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28OpenZeppelin.one%7C684985B7-0FF8-4440-88E3-A842579A4539%2Fsolidity-docgen%7CFC626ECF-245A-0648-92A8-CD5FC3066B0A%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</h3>
+<p>[<a href="ithoughts://open?path=/Local/GoogleDriveJesoosG/jesu/Private/MindMap/openzeppelin-solidity.itmz&amp;topic=6BEA19C4-D159-455D-9458-61FCD1315063" target="_blank" rel="noopener"><u>solidity-docgen-iThoughtsX</u></a>]<br>
+ <br>
+Prerequisites<br>
+ <br>
+git clone git@github.com:OpenZeppelin/openzeppelin-solidity.git ~/dev/smartcontractz<br>
+cd ~/dev/smartcontractz<br>
+mkdir docs<br>
+cd docs<br>
+docusaurus-init<br>
+mv docs-examples-from-docusaurus docs<br>
+cd website<br>
+mv blog-examples-from-docusaurus blog<br>
+solidity-docgen --exclude examples ~/dev/smartcontractz ~/dev/smartcontractz/contracts ~/dev/smartcontractz/docs<br>
+npm start<br>
+<a href="http://localhost:3000/docs/crowdsale_Crowdsale" target="_blank" rel="noopener"><u>http://localhost:3000/docs/crowdsale_Crowdsale</u></a><br>
+ <br>
+ <br>
+/Users/roisun/dev/smartcontractz/docs/website/siteConfig.js:42<br>
+    // {doc: 'doc4', label: 'API'},<br>
+    {doc: 'crowdsale_Crowdsale', label: 'API'},<br>
+ <br>
+ <br>
+ <br>
+[참고]<br>
+Error: Solidity compiler not found. Please, add solc to path or define environment variable SOLC_PATH.<br>
+ <br>
+export SOLC_PATH=/usr/local/bin/solcjs<br>
+ <br>
+ <br>
+Error: Command line operation failed with code 1.<br>
+Standard error output: Invalid option selected, must specify either --bin or --abi<br>
+ <br>
+<a href="https://github.com/ConsenSys/mythril/issues/82" target="_blank" rel="noopener"><u>https://github.com/ConsenSys/mythril/issues/82</u></a><br>
+<strong>Hi <a href="https://github.com/Warchant" target="_blank" rel="noopener"><u>@Warchant</u></a>, <a href="https://github.com/ethereum/solc-js" target="_blank" rel="noopener"><u>solcjs</u></a> doesn't support all command line options, you need to <a href="http://solidity.readthedocs.io/en/v0.4.21/installing-solidity.html#binary-packages" target="_blank" rel="noopener"><u>install the native solc</u></a>.</strong><br>
+❯ brew linkapps solidity<br>
+Error: Unknown command: linkapps<br>
+<a href="https://solidity.readthedocs.io/en/develop/installing-solidity.html" target="_blank" rel="noopener"><u>https://solidity.readthedocs.io/en/develop/installing-solidity.html</u></a><br>
+ <br>
+export SOLC_PATH=/usr/local/bin/solc or export SOLC_PATH=</p>
+<h3><a href="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53" target="_blank" rel="noopener"><u>https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53</u></a></h3>
+<p>링크: <a href="https://asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53" target="_blank" rel="noopener">asciinema.org/a/TBHvc0p2mwEzWQazYa5aJBp53</a></p>
+<h1>framework</h1>
+<p>링크: <a href="https://openzeppelin.slack.com/archives/C4GP7FGM7/p1537245807000100" target="_blank" rel="noopener">openzeppelin.slack.com/archives/C4GP7FGM7/p1537245807000100</a></p>
+<h2><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&amp;section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&amp;page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&amp;object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&amp;38" target="_blank" rel="noopener"><u>누가 누구를 호출하느냐의 차이 (who calls who)</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</h2>
+<h2>(Ethereum)</h2>
+<p>development framework</p>
+<h3>Truffle</h3>
+<p>링크: <a href="https://github.com/trufflesuite/truffle" target="_blank" rel="noopener">github.com/trufflesuite/truffle</a></p>
+<h2>(Javascript)</h2>
+<p>test framework</p>
+<h3>Mocha</h3>
+<p>링크: <a href="https://mochajs.org" target="_blank" rel="noopener">mochajs.org</a></p>
+<h2>battle-tested framework</h2>
+<h3>OpenZeppelin</h3>
+<p>링크: <a href="https://openzeppelin.org" target="_blank" rel="noopener">openzeppelin.org</a></p>
+<h3>framework는 아닌 듯 한데 홈페이지에는 이렇게 적혀 있음</h3>
+<h2><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Software.one%23Framework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4&amp;section-id=%7BA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%7D&amp;page-id=%7B8318E269-3876-0146-BA76-63850ABF578C%7D&amp;object-id=%7BD5F8F6B1-EAED-1346-BA76-FF9CEEA9737C%7D&amp;12" target="_blank" rel="noopener"><u>Framework와 Library의 차이</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Software.one%7CA52124FC-BC1E-3E4F-900A-C8BF1CBB5BD4%2FFramework%EC%99%80%20Library%EC%9D%98%20%EC%B0%A8%EC%9D%B4%7C8318E269-3876-0146-BA76-63850ABF578C%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</h2>
+<p><a href="http://mangkyu.tistory.com/4" target="_blank" rel="noopener"><u>http://mangkyu.tistory.com/4</u></a><br>
+ <br>
+<a href="http://you9010.tistory.com/147" target="_blank" rel="noopener"><u>http://you9010.tistory.com/147</u></a><br>
+<u>누가 누구를 호출하느냐의 차이 </u>(who calls who)<br>
+프레임워크에서는 프레임워크 코드가 우리 코드를 호출하고, 라이브러리에서는 우리 코드가 라이브러리를 호출한다.</p>
+<h1>library</h1>
+<h2>Chai</h2>
+<p>링크: <a href="http://www.chaijs.com" target="_blank" rel="noopener">chaijs.com</a></p>
+<h2>OpenZeppelin</h2>
+<p>링크: <a href="https://github.com/OpenZeppelin/openzeppelin-solidity#" target="_blank" rel="noopener">github.com/OpenZeppelin/openzeppelin-solidity#</a></p>
+<h1>SmartContract</h1>
+<h1>참고</h1>
+<h2>Test</h2>
+<h3>truffle test</h3>
+<p>링크: <a href="https://truffleframework.com/docs/truffle/testing/writing-tests-in-javascript#writing-tests-in-javascript" target="_blank" rel="noopener">truffleframework.com/docs/truffle/testing/writing-tests-in-javascript#writing-tests-in-javascript</a></p>
+<h3>Style(in Mocha)</h3>
+<p>링크: <a href="https://mochajs.org/#interfaces" target="_blank" rel="noopener">mochajs.org/#interfaces</a></p>
+<ul>
+<li>
+<p>BDD</p>
+<ul>
+<li>
+<p><a href="onenote:https://d.docs.live.net/b6d36b4171fb231d/%EB%AC%B8%EC%84%9C/BlockChain20180702/Dev.Env.one%23Mocha&amp;section-id=%7B2C633C5C-FA30-D946-A06E-EEF53C7C7E70%7D&amp;page-id=%7B65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%7D&amp;object-id=%7B386F4037-ECF2-DF04-2ED9-2F67A6C24576%7D&amp;12" target="_blank" rel="noopener"><u>BDD는 위의 문제 해결을 위한 테스트 작성 방식을 다음과 같이</u></a>  (<a href="https://onedrive.live.com/view.aspx?resid=B6D36B4171FB231D%212095&amp;id=documents&amp;wd=target%28Dev.Env.one%7C2C633C5C-FA30-D946-A06E-EEF53C7C7E70%2FMocha%7C65C6AB5D-07BA-7F4F-BE9C-93FFA83858F1%2F%29" target="_blank" rel="noopener"><u>웹 보기</u></a>)</p>
+<p>BDD는 위의 문제 해결을 위한 테스트 작성 방식을 다음과 같이 제시한다. <br>
+“구현(Implementation)을 테스트하는 것이 아니라, 동작(Behavior)을 테스트하는 것이다.”</p>
+</li>
+</ul>
+</li>
+<li>
+<p>TDD</p>
+</li>
+</ul>
+<h2>debug</h2>
+<h3>Javascript( <strong>Using Intellij Debugger</strong> )</h3>
+<p>링크: <a href="https://github.com/jesoos/truffle-intellij-debug" target="_blank" rel="noopener">github.com/jesoos/truffle-intellij-debug</a></p>
+<h3>Solidity</h3>
+
+</div>
+
+</body>
+</html>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://jesoos.github.io/static/openzeppelin-summary/openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html" data-id="cjmbmenhn003apqgeioeyh4xz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/09/21/01-Blockchain-20180921-open-zeppelin-summary/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://openzeppelin.org/img/openzeppelin-logo.svg)" alt="OpenZeppelin Summary" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/01-Blockchain/">01. Blockchain</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a></p>
+                            <p class="item-title"><a href="/2018/09/21/01-Blockchain-20180921-open-zeppelin-summary/" class="title">OpenZeppelin Summary</a></p>
+                            <p class="item-date"><time datetime="2018-09-21T05:58:58.000Z" itemprop="datePublished">2018-09-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-LUNOS/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://www.silvermoongroup.com/images/banner_home2.jpg)" alt="LUNOS ?" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-LUNOS/" class="title">LUNOS ?</a></p>
+                            <p class="item-date"><time datetime="2017-08-25T05:11:10.000Z" itemprop="datePublished">2017-08-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/25/03-Tools-20170825-Hexo-GitPage/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://simhyejin.github.io/images/hexo-git.png)" alt="Hexo+GitPage" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/03-Tools/">03. Tools</a></p>
+                            <p class="item-title"><a href="/2017/08/25/03-Tools-20170825-Hexo-GitPage/" class="title">Hexo+GitPage</a></p>
+                            <p class="item-date"><time datetime="2017-08-25T04:52:05.000Z" itemprop="datePublished">2017-08-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-Git-Strategy/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/c01fadb8.png)" alt="Git Strategy" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/04-LUNOS/Git/">Git</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-Git-Strategy/" class="title">Git Strategy</a></p>
+                            <p class="item-date"><time datetime="2017-08-25T04:36:30.000Z" itemprop="datePublished">2017-08-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-Settings/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://www.iconarchive.com/download/i55343/aroche/delta/Settings.ico)" alt="Settings" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/04-LUNOS/Settings/">Settings</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-Settings/" class="title">Settings</a></p>
+                            <p class="item-date"><time datetime="2017-08-25T04:31:33.000Z" itemprop="datePublished">2017-08-25</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01-Blockchain/">01. Blockchain</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/">02. BA</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/BPMN/">BPMN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/UML/">UML</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/">03. Tools</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/">04. LUNOS</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/DB/">DB</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Design/">Design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Settings/">Settings</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Test/">Test</a><span class="category-list-count">2</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">14</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/">Test</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UML/">UML</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Test/" style="font-size: 20px;">Test</a> <a href="/tags/UML/" style="font-size: 10px;">UML</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Choi JeSoo</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'jesoos-github-io';
+    
+    
+    var disqus_url = 'https://jesoos.github.io/static/openzeppelin-summary/openzeppelin-summary-d04b88ad8cc1f6c02e62aef2718b3ab8.html';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

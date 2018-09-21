@@ -81,7 +81,7 @@ ga('send', 'pageview');
                                     <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/">01. LUNOS</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/DB/">DB</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/Design/">Design</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/Git/">Git</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/Settings/">Settings</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-LUNOS/Test/">Test</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/">02. BA</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/BPMN/">BPMN</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/UML/">UML</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/">03. Tools</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a></li></ul></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-Blockchain/">01. Blockchain</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/">02. BA</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/BPMN/">BPMN</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/02-BA/UML/">UML</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/">03. Tools</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/">04. LUNOS</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/DB/">DB</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Design/">Design</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Git/">Git</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Settings/">Settings</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/04-LUNOS/Test/">Test</a></li></ul></li></ul>
                                     
                         </ul>
                         <nav id="sub-nav">
@@ -167,16 +167,16 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h3 id="Github-Pages-및-Hexo-로-Git-에-배포"><a href="#Github-Pages-및-Hexo-로-Git-에-배포" class="headerlink" title="Github Pages 및 Hexo 로 Git 에 배포"></a>Github Pages 및 Hexo 로 Git 에 배포</h3><blockquote><footer><strong>Github Pages와 Hexo를 통해 30분만에 기술 블로그 만들기</strong><cite><a href="https://www.holaxprogramming.com/2017/04/16/github-page-and-hexo/" target="_blank" rel="external">www.holaxprogramming.com/2017/04/16/github-page-and-hexo</a></cite></footer></blockquote>
-<h3 id="실제-작업-예시"><a href="#실제-작업-예시" class="headerlink" title="실제 작업 예시"></a>실제 작업 예시</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g hexo-cli</div><div class="line">hexo -v</div><div class="line">hexo init blog</div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">hexo server</div><div class="line"><span class="comment"># (new terminal)</span></div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">hexo new testPost</div><div class="line">hexo new draft testDraftPost</div><div class="line">hexo publish testDraftPost</div><div class="line"><span class="comment"># (Git hub 에서 repository 만들기)</span></div><div class="line">hexo generate</div><div class="line">npm install --save hexo-deployer-git</div><div class="line">hexo deploy</div><div class="line">hexo deploy --generate</div><div class="line">git <span class="built_in">clone</span> https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</div><div class="line">npm install -S hexo-generator-json-content</div><div class="line">hexo clean</div><div class="line">hexo deploy --generate</div></pre></td></tr></table></figure>
-<h3 id="공식-Site"><a href="#공식-Site" class="headerlink" title="공식 Site"></a><a href="https://hexo.io/ko/index.html" target="_blank" rel="external">공식 Site</a></h3><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>
+            <h3 id="Github-Pages-및-Hexo-로-Git-에-배포"><a href="#Github-Pages-및-Hexo-로-Git-에-배포" class="headerlink" title="Github Pages 및 Hexo 로 Git 에 배포"></a>Github Pages 및 Hexo 로 Git 에 배포</h3><blockquote><footer><strong>Github Pages와 Hexo를 통해 30분만에 기술 블로그 만들기</strong><cite><a href="https://www.holaxprogramming.com/2017/04/16/github-page-and-hexo/" target="_blank" rel="noopener">www.holaxprogramming.com/2017/04/16/github-page-and-hexo</a></cite></footer></blockquote>
+<h3 id="실제-작업-예시"><a href="#실제-작업-예시" class="headerlink" title="실제 작업 예시"></a>실제 작업 예시</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br><span class="line">hexo -v</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># (new terminal)</span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo new testPost</span><br><span class="line">hexo new draft testDraftPost</span><br><span class="line">hexo publish testDraftPost</span><br><span class="line"><span class="comment"># (Git hub 에서 repository 만들기)</span></span><br><span class="line">hexo generate</span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">hexo deploy</span><br><span class="line">hexo deploy --generate</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</span><br><span class="line">npm install -S hexo-generator-json-content</span><br><span class="line">hexo clean</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
+<h3 id="공식-Site"><a href="#공식-Site" class="headerlink" title="공식 Site"></a><a href="https://hexo.io/ko/index.html" target="_blank" rel="noopener">공식 Site</a></h3><h3 id="Related-Posts"><a href="#Related-Posts" class="headerlink" title="Related Posts"></a>Related Posts</h3>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="https://jesoos.github.io/2017/08/25/03-Tools-20170825-Hexo-GitPage/" data-id="cj6rffwk1000n7lgejxae49hj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://jesoos.github.io/2017/08/25/03-Tools-20170825-Hexo-GitPage/" data-id="cjmblexzv000og9gee23tr8r9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -313,7 +313,7 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/08/25/01-LUNOS-20170825-LUNOS/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2017/08/25/04-LUNOS-20170825-LUNOS/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
@@ -324,7 +324,7 @@ ga('send', 'pageview');
     </a>
     
     
-        <a href="/2017/08/25/01-LUNOS-20170825-Git-Strategy/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/08/25/04-LUNOS-20170825-Git-Strategy/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
         <p class="article-nav-title">Git Strategy</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
@@ -345,7 +345,27 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/08/25/01-LUNOS-20170825-LUNOS/" class="thumbnail">
+                            <a href="/2018/09/21/01-Blockchain-20180921-open-zeppelin-summary/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://openzeppelin.org/img/openzeppelin-logo.svg)" alt="OpenZeppelin Summary" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/01-Blockchain/">01. Blockchain</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a></p>
+                            <p class="item-title"><a href="/2018/09/21/01-Blockchain-20180921-open-zeppelin-summary/" class="title">OpenZeppelin Summary</a></p>
+                            <p class="item-date"><time datetime="2018-09-21T05:58:58.000Z" itemprop="datePublished">2018-09-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-LUNOS/" class="thumbnail">
     
     
         <span style="background-image:url(http://www.silvermoongroup.com/images/banner_home2.jpg)" alt="LUNOS ?" class="thumbnail-image"></span>
@@ -356,8 +376,8 @@ ga('send', 'pageview');
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/01-LUNOS/">01. LUNOS</a></p>
-                            <p class="item-title"><a href="/2017/08/25/01-LUNOS-20170825-LUNOS/" class="title">LUNOS ?</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-LUNOS/" class="title">LUNOS ?</a></p>
                             <p class="item-date"><time datetime="2017-08-25T05:11:10.000Z" itemprop="datePublished">2017-08-25</time></p>
                         </div>
                     </li>
@@ -385,7 +405,7 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/08/25/01-LUNOS-20170825-Git-Strategy/" class="thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-Git-Strategy/" class="thumbnail">
     
     
         <span style="background-image:url(/images/c01fadb8.png)" alt="Git Strategy" class="thumbnail-image"></span>
@@ -396,8 +416,8 @@ ga('send', 'pageview');
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/01-LUNOS/">01. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-LUNOS/Git/">Git</a></p>
-                            <p class="item-title"><a href="/2017/08/25/01-LUNOS-20170825-Git-Strategy/" class="title">Git Strategy</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/04-LUNOS/Git/">Git</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-Git-Strategy/" class="title">Git Strategy</a></p>
                             <p class="item-date"><time datetime="2017-08-25T04:36:30.000Z" itemprop="datePublished">2017-08-25</time></p>
                         </div>
                     </li>
@@ -405,7 +425,7 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/08/25/01-LUNOS-20170825-Settings/" class="thumbnail">
+                            <a href="/2017/08/25/04-LUNOS-20170825-Settings/" class="thumbnail">
     
     
         <span style="background-image:url(http://www.iconarchive.com/download/i55343/aroche/delta/Settings.ico)" alt="Settings" class="thumbnail-image"></span>
@@ -416,29 +436,9 @@ ga('send', 'pageview');
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/01-LUNOS/">01. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-LUNOS/Settings/">Settings</a></p>
-                            <p class="item-title"><a href="/2017/08/25/01-LUNOS-20170825-Settings/" class="title">Settings</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/04-LUNOS/">04. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/04-LUNOS/Settings/">Settings</a></p>
+                            <p class="item-title"><a href="/2017/08/25/04-LUNOS-20170825-Settings/" class="title">Settings</a></p>
                             <p class="item-date"><time datetime="2017-08-25T04:31:33.000Z" itemprop="datePublished">2017-08-25</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://i.ytimg.com/vi/8HssKRnvo6c/maxresdefault.jpg)" alt="Oracle-XE-11g (Docker)" class="thumbnail-image"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/01-LUNOS/">01. LUNOS</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/01-LUNOS/DB/">DB</a></p>
-                            <p class="item-title"><a href="/2017/08/25/01-LUNOS-20170825-Oracle-XE-11g/" class="title">Oracle-XE-11g (Docker)</a></p>
-                            <p class="item-date"><time datetime="2017-08-25T04:16:25.000Z" itemprop="datePublished">2017-08-25</time></p>
                         </div>
                     </li>
                 
@@ -451,7 +451,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/">01. LUNOS</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/DB/">DB</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/Design/">Design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/Settings/">Settings</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/01-LUNOS/Test/">Test</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/">02. BA</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/BPMN/">BPMN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/UML/">UML</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/">03. Tools</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/01-Blockchain/">01. Blockchain</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/01-Blockchain/Open-Zeppelin/">Open Zeppelin</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/">02. BA</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/BPMN/">BPMN</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/02-BA/UML/">UML</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/">03. Tools</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/03-Tools/IntelliJ/">IntelliJ</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/">04. LUNOS</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/DB/">DB</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Design/">Design</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Git/">Git</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Settings/">Settings</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/04-LUNOS/Test/">Test</a><span class="category-list-count">2</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -461,7 +461,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">14</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">14</span></li></ul>
         </div>
     </div>
 
@@ -517,7 +517,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2017 Choi JeSoo</p>
+                <p>&copy; 2018 Choi JeSoo</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>
